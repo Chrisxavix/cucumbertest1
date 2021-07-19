@@ -8,7 +8,8 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.CucumberOptions;
 
 @RunWith(Cucumber.class)
-/* Debe estar a la misma altura para dar el path de Features */
+/* Debe estar a la misma altura para dar el path de Features
+   Al ejecutar el runner apunta a StepDefinition y empieza a recorrer los métodos de acuerdo a la acción */
 @CucumberOptions(features = "Features", glue = {"StepDefinition"})
 public class Runner {
 }
